@@ -9,6 +9,8 @@ kubectl apply -f ./client-network.yml
 # command to get both objects/config
 kubectl get pods
 kubectl get services
+- extra information of objects
+kubectl get pods -o wide
 
 # command to inspect pods what containers/image is running inside it
 kubectl describe <objecttype> <objectname>
@@ -21,4 +23,8 @@ kubernetes porvides another type of object type <Deployment>
 
 # remove existing objects
 kubectl delete -f client-pod
+
+# connecting to Minikube with browser
+minikube ip
+
  
