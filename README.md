@@ -27,4 +27,9 @@ kubectl delete -f client-pod
 # connecting to Minikube with browser
 minikube ip
 
+# forcefully tell kubectl to use latest version of image from dockerhub
+kubectl set image <object type> / <object name> <container name> = <new image to use>
+kubectl set image deployment/client-deployment client = apurwar15/multiclient:v5
+
+
  
