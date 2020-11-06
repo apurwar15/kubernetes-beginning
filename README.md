@@ -34,5 +34,6 @@ minikube service client-service-pod --url
 kubectl set image <object type> / <object name> <container name> = <new image to use>
 kubectl set image deployment/client-deployment client = apurwar15/multiclient:v5
 
-
+# connect local docker client to cluster docker-server
+eval $(minikube docker-env)
  
