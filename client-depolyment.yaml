@@ -15,6 +15,6 @@ spec:
   spec:
    containers:
     - name: client
-      image: apurwar15/multi-client
+      image: apurwar15/expressapp
       ports:
-       - contianerPort : 3000
+       - contianerPort : 5000

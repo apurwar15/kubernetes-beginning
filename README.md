@@ -26,6 +26,9 @@ kubectl delete -f client-pod
 
 # connecting to Minikube with browser
 minikube ip
+minikube serive <service name> --url
+minikube service client-service-pod --url
+
 
 # forcefully tell kubectl to use latest version of image from dockerhub
 kubectl set image <object type> / <object name> <container name> = <new image to use>

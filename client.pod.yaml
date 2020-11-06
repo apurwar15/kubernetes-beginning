@@ -7,8 +7,8 @@ metadata:
 spec:
  containers:
   - name: client
-    image: apurwar15/multi-client
+    image: apurwar15/expressapp
     ports:
-     - containerPort: 3000
+     - containerPort: 5000
 
  
