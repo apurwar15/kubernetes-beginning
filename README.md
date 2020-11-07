@@ -36,4 +36,8 @@ kubectl set image deployment/client-deployment client = apurwar15/multiclient:v5
 
 # connect local docker client to cluster docker-server
 eval $(minikube docker-env)
- 
+
+
+# secret providing to container through imperative way
+kubectl create secret generic <secret name> --from-literal key=value
+kubectl create secret generic pgpassword --from-literal PGPASSWORD= 1234asdf 
