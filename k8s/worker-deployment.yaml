@@ -12,7 +12,7 @@ spec:
    labels:
     component: worker
   spec:
-   contianers:
+   containers:
     - name: worker
       image: stephengrider/multi-worker
       env:

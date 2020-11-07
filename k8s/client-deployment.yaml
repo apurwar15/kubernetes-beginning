@@ -13,8 +13,8 @@ spec:
    labels: 
     component: web
   spec:
-   contianers:
+   containers:
     - name : client
       image : stephengrinder/multi-client
       ports:
-       - contianerPort : 3000
+       - containerPort : 3000
